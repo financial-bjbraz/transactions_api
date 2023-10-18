@@ -1,0 +1,21 @@
+package br.com.bjbraz.entity.card
+
+import com.fasterxml.jackson.annotation.JsonFormat
+
+@JsonFormat(shape = JsonFormat.Shape.OBJECT)
+
+enum class CardStatus(val nome:String) {
+    REQUESTING("REQUESTING"),
+    REQUESTED("REQUESTED"),
+    CREATED("CREATED"),
+    CANCEL_REQUESTED("CANCEL_REQUESTED"),
+    CANCELLED("CANCELLED"),
+    CREATION_ERROR("CREATION_ERROR"),
+    CREATED_BLOCKED("CREATED_BLOCKED"),
+    CREATED_ACTIVE("CREATED_ACTIVE"),
+    REISSUE_REQUESTING("REISSUE_REQUESTING"),
+    REISSUE_REQUESTED("REISSUE_REQUESTED"),
+    REISSUED("REISSUED"),
+    UNBLOCKED("UNBLOCKED"),
+    BLOCKED("BLOCKED")
+}

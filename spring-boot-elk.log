@@ -1,0 +1,161 @@
+2020-08-13 00:14:09.306  INFO 15977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-13 00:14:09.501  INFO 15977 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 179ms. Found 8 JPA repository interfaces.
+2020-08-13 00:14:10.207  INFO 15977 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 00:14:10.227  INFO 15977 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityExpressionHandler' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 00:14:10.230  INFO 15977 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 00:14:10.538  INFO 15977 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-13 00:14:10.650  INFO 15977 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-13 00:14:10.793  INFO 15977 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-13 00:14:10.923  INFO 15977 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-13 00:14:11.110  INFO 15977 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-13 00:14:11.132  INFO 15977 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-13 00:14:12.735  INFO 15977 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-13 00:14:12.749  INFO 15977 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-13 00:14:16.161  INFO 15977 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2020-08-13 00:14:16.554  INFO 15977 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2020-08-13 00:14:17.787  INFO 15977 --- [main] o.apache.activemq.broker.BrokerService   : Using Persistence Adapter: MemoryPersistenceAdapter
+2020-08-13 00:14:17.823  INFO 15977 --- [JMX connector] o.a.a.broker.jmx.ManagementContext       : JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-08-13 00:14:17.928  INFO 15977 --- [main] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-37475-1597288457796-0:1) is starting
+2020-08-13 00:14:17.933  INFO 15977 --- [main] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-37475-1597288457796-0:1) started
+2020-08-13 00:14:17.933  INFO 15977 --- [main] o.apache.activemq.broker.BrokerService   : For help or more information please see: http://activemq.apache.org
+2020-08-13 00:14:17.935  WARN 15977 --- [main] o.apache.activemq.broker.BrokerService   : Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: /home/alex/projetos/transactions_api only has 8682 mb of usable space. - resetting to maximum available disk space: 8682 mb
+2020-08-13 00:14:17.971  INFO 15977 --- [main] o.a.activemq.broker.TransportConnector   : Connector vm://localhost started
+2020-08-13 00:14:18.246  INFO 15977 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8081
+2020-08-13 00:20:26.874  INFO 15977 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-37475-1597288457796-0:1) is shutting down
+2020-08-13 00:20:26.907  INFO 15977 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Encountered a JMSException - resetting the underlying JMS Connection
+
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2020-08-13 00:20:26.926  INFO 15977 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService
+2020-08-13 00:20:26.948  INFO 15977 --- [ActiveMQ ShutdownHook] o.a.activemq.broker.TransportConnector   : Connector vm://localhost stopped
+2020-08-13 00:20:26.950  WARN 15977 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Could not close shared JMS Connection
+
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:501)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:389)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:205)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:367)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:721)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2020-08-13 00:20:26.967  INFO 15977 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-37475-1597288457796-0:1) uptime 6 minutes
+2020-08-13 00:20:26.967  INFO 15977 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-37475-1597288457796-0:1) is shutdown
+2020-08-13 00:20:26.972  INFO 15977 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-13 00:20:26.976  INFO 15977 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-13 00:20:26.990  INFO 15977 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-08-13 00:21:07.040  INFO 17025 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-08-13 00:21:07.225  INFO 17025 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 165ms. Found 8 JPA repository interfaces.
+2020-08-13 00:21:07.787  INFO 17025 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.ReactiveMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 00:21:07.813  INFO 17025 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityExpressionHandler' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 00:21:07.816  INFO 17025 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-13 00:21:08.077  INFO 17025 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-08-13 00:21:08.155  INFO 17025 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.12.Final
+2020-08-13 00:21:08.274  INFO 17025 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-08-13 00:21:08.390  INFO 17025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-08-13 00:21:08.530  INFO 17025 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-08-13 00:21:08.549  INFO 17025 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-08-13 00:21:10.251  INFO 17025 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-08-13 00:21:10.266  INFO 17025 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-08-13 00:21:13.379  INFO 17025 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path ''
+2020-08-13 00:21:13.827  INFO 17025 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2020-08-13 00:21:15.120  INFO 17025 --- [main] o.apache.activemq.broker.BrokerService   : Using Persistence Adapter: MemoryPersistenceAdapter
+2020-08-13 00:21:15.152  INFO 17025 --- [JMX connector] o.a.a.broker.jmx.ManagementContext       : JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2020-08-13 00:21:15.268  INFO 17025 --- [main] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-44691-1597288875127-0:1) is starting
+2020-08-13 00:21:15.276  INFO 17025 --- [main] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-44691-1597288875127-0:1) started
+2020-08-13 00:21:15.277  INFO 17025 --- [main] o.apache.activemq.broker.BrokerService   : For help or more information please see: http://activemq.apache.org
+2020-08-13 00:21:15.295  WARN 17025 --- [main] o.apache.activemq.broker.BrokerService   : Temporary Store limit is 51200 mb (current store usage is 0 mb). The data directory: /home/alex/projetos/transactions_api only has 8642 mb of usable space. - resetting to maximum available disk space: 8642 mb
+2020-08-13 00:21:15.405  INFO 17025 --- [main] o.a.activemq.broker.TransportConnector   : Connector vm://localhost started
+2020-08-13 00:21:15.735  INFO 17025 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8081
+2020-08-13 00:21:43.421  INFO 17025 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-44691-1597288875127-0:1) is shutting down
+2020-08-13 00:21:43.439  INFO 17025 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Encountered a JMSException - resetting the underlying JMS Connection
+
+javax.jms.JMSException: peer (vm://localhost#1) stopped.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:54)
+	at org.apache.activemq.ActiveMQConnection.onAsyncException(ActiveMQConnection.java:1960)
+	at org.apache.activemq.ActiveMQConnection.onException(ActiveMQConnection.java:1979)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:126)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2020-08-13 00:21:43.452  WARN 17025 --- [DefaultMessageListenerContainer-1] o.s.j.l.DefaultMessageListenerContainer  : Setup of JMS message listener invoker failed for destination 'callback-card-external-dev' - trying to recover. Cause: The Session is closed
+2020-08-13 00:21:43.471  INFO 17025 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService
+2020-08-13 00:21:43.491  INFO 17025 --- [ActiveMQ ShutdownHook] o.a.activemq.broker.TransportConnector   : Connector vm://localhost stopped
+2020-08-13 00:21:43.493  WARN 17025 --- [ActiveMQ Connection Executor: vm://localhost#0] o.s.j.c.CachingConnectionFactory         : Could not close shared JMS Connection
+
+javax.jms.JMSException: Disposed due to prior exception
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:72)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1421)
+	at org.apache.activemq.ActiveMQConnection.close(ActiveMQConnection.java:688)
+	at org.springframework.jms.connection.SingleConnectionFactory.closeConnection(SingleConnectionFactory.java:501)
+	at org.springframework.jms.connection.SingleConnectionFactory.resetConnection(SingleConnectionFactory.java:389)
+	at org.springframework.jms.connection.CachingConnectionFactory.resetConnection(CachingConnectionFactory.java:205)
+	at org.springframework.jms.connection.SingleConnectionFactory.onException(SingleConnectionFactory.java:367)
+	at org.springframework.jms.connection.SingleConnectionFactory$AggregatedExceptionListener.onException(SingleConnectionFactory.java:721)
+	at org.apache.activemq.ActiveMQConnection$5.run(ActiveMQConnection.java:1967)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: Disposed due to prior exception
+	at org.apache.activemq.transport.ResponseCorrelator.onException(ResponseCorrelator.java:125)
+	at org.apache.activemq.transport.TransportFilter.onException(TransportFilter.java:114)
+	at org.apache.activemq.transport.vm.VMTransport.stop(VMTransport.java:233)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.TransportFilter.stop(TransportFilter.java:72)
+	at org.apache.activemq.transport.ResponseCorrelator.stop(ResponseCorrelator.java:132)
+	at org.apache.activemq.broker.TransportConnection.doStop(TransportConnection.java:1194)
+	at org.apache.activemq.broker.TransportConnection$4.run(TransportConnection.java:1160)
+	... 3 common frames omitted
+Caused by: org.apache.activemq.transport.TransportDisposedIOException: peer (vm://localhost#1) stopped.
+	... 9 common frames omitted
+
+2020-08-13 00:21:43.518  INFO 17025 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-08-13 00:21:43.520  INFO 17025 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-44691-1597288875127-0:1) uptime 28.435 seconds
+2020-08-13 00:21:43.520  INFO 17025 --- [ActiveMQ ShutdownHook] o.apache.activemq.broker.BrokerService   : Apache ActiveMQ 5.15.12 (localhost, ID:alex-44691-1597288875127-0:1) is shutdown
+2020-08-13 00:21:43.523  INFO 17025 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-08-13 00:21:43.541  INFO 17025 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
